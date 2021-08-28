@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Red Hat Display';
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    /* width: 100%; */
+    height: 100vh;
+
+    background: url(images/pattern-background-desktop.svg) no-repeat center center,
+    hsl(225, 100%, 94%);
+    background-position: top;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.card {
+    background: white;
+    width: 350px;
+    height: 550px;
+    border-radius: 10px;
+}
+.card .hero-icon {
+    width: 100%;
+    height: 30%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.content {
+    color:hsl(224, 23%, 55%);
+    padding: 25px;
+}
+.content h2 {
+    color:hsl(223, 47%, 23%);
+    font-weight: 900;
+    margin-bottom: 15px;
+}
+.content p {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.content .sub-content  {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    justify-content: center;
+    align-items: center;
+    background:hsl(225, 100%, 98%);
+    border-radius: 10px;
+    padding: 15px 5px;
+    margin: 20px 0px;
+}
+.sub-content .sub-content-2 {
+    text-align: left;
+    margin-left: 5px;
+}
+.sub-content .sub-content-2 h2 {
+    font-size: 16px;
+    font-weight: 900;
+    margin-bottom: 0;
+}
+.sub-content .sub-content-3 a {
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.content button {
+    background:hsl(245, 75%, 52%);
+    color: white;
+    font-size: 14px;
+    font-weight: 700;
+    padding: 10px 75px;
+    margin-bottom: 30px;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 0px 15px 7px hsl(220, 100%, 95%);
+}
+
+
+@media (max-width: 500px) {
+    .card .content {
+        padding: 40px;
+    }
+    .content button {
+        padding: 10px 65px;
+        margin-bottom: 20px;
+    }
+}
